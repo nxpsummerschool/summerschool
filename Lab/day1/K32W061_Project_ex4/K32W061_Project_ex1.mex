@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding= "UTF-8" ?>
+<configuration name="K32W061" xsi:schemaLocation="http://mcuxpresso.nxp.com/XSD/mex_configuration_12 http://mcuxpresso.nxp.com/XSD/mex_configuration_12.xsd" uuid="0fff2eba-cc90-4f98-b8dc-bece00b6b349" version="12" xmlns="http://mcuxpresso.nxp.com/XSD/mex_configuration_12" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <common>
+      <processor>K32W061</processor>
+      <package>K32W061HN</package>
+      <mcu_data>ksdk2_0</mcu_data>
+      <cores selected="cm4">
+         <core name="Cortex-M4" id="cm4" description="M4 core"/>
+      </cores>
+      <description>Configuration imported from K32W061_Project_ex1</description>
+   </common>
+   <preferences>
+      <validate_boot_init_only>true</validate_boot_init_only>
+      <generate_extended_information>false</generate_extended_information>
+      <generate_code_modified_registers_only>false</generate_code_modified_registers_only>
+      <update_include_paths>true</update_include_paths>
+      <generate_registers_defines>false</generate_registers_defines>
+   </preferences>
+   <tools>
+      <pins name="Pins" version="12.0" enabled="true" update_project_code="true">
+         <pins_profile>
+            <processor_version>12.0.0</processor_version>
+         </pins_profile>
+         <functions_list>
+            <function name="BOARD_InitPins">
+               <description>Configures pin routing and optionally pin electrical features.</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>cm4</coreID>
+                  <enableClock>true</enableClock>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="SWD" description="Peripheral SWD is not initialized" problem_level="1" source="Pins:BOARD_InitPins">
+                     <feature name="initialized" evaluation="equal">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="Peripheral" resourceId="USART0" description="Peripheral USART0 is not initialized" problem_level="1" source="Pins:BOARD_InitPins">
+                     <feature name="initialized" evaluation="equal">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="SWComponent" resourceId="platform.drivers.common" description="Pins initialization requires the COMMON Driver in the project." problem_level="2" source="Pins:BOARD_InitPins">
+                     <feature name="enabled" evaluation="equal" configuration="cm4">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="SWComponent" resourceId="platform.drivers.jn_iocon" description="Pins initialization requires the JN_IOCON Driver in the project." problem_level="2" source="Pins:BOARD_InitPins">
+                     <feature name="enabled" evaluation="equal" configuration="cm4">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="SWD" signal="SWCLK" pin_num="15" pin_signal="PIO0_12/IR_BLASTER/SWCLK/PWM0/I2C1_SCL/SPI0_MOSI/ANA_COMP_OUT">
+                     <pin_features>
+                        <pin_feature name="mode" value="pullUp"/>
+                        <pin_feature name="slew0" value="standard"/>
+                        <pin_feature name="invert" value="disabled"/>
+                        <pin_feature name="filter_off" value="disabled"/>
+                        <pin_feature name="slew1" value="standard"/>
+                        <pin_feature name="open_drain" value="disabled"/>
+                        <pin_feature name="ssel" value="disabled"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="SWD" signal="SWDIO" pin_num="16" pin_signal="PIO0_13/SPI1_SSELN2/SWDIO/PWM2/I2C1_SDA/SPI0_SSELN">
+                     <pin_features>
+                        <pin_feature name="mode" value="pullUp"/>
+                        <pin_feature name="slew0" value="standard"/>
+                        <pin_feature name="invert" value="disabled"/>
+                        <pin_feature name="filter_off" value="disabled"/>
+                        <pin_feature name="slew1" value="standard"/>
+                        <pin_feature name="open_drain" value="disabled"/>
+                        <pin_feature name="ssel" value="disabled"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="USART0" signal="RXD" pin_num="12" pin_signal="PIO0_9/SPI0_SSELN/USART0_RXD/CT32B1_CAP1/PWM9/USART1_SCK/ADO/PDM1_CLK">
+                     <pin_features>
+                        <pin_feature name="mode" value="pullUp"/>
+                        <pin_feature name="slew0" value="standard"/>
+                        <pin_feature name="invert" value="disabled"/>
+                        <pin_feature name="filter_off" value="disabled"/>
+                        <pin_feature name="slew1" value="standard"/>
+                        <pin_feature name="open_drain" value="disabled"/>
+                        <pin_feature name="ssel" value="disabled"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="USART0" signal="TXD" pin_num="11" pin_signal="PIO0_8/SPI0_MOSI/USART0_TXD/CT32B0_MAT0/PWM8/ANA_COMP_OUT/RFTX/PDM1_DATA">
+                     <pin_features>
+                        <pin_feature name="mode" value="pullUp"/>
+                        <pin_feature name="slew0" value="standard"/>
+                        <pin_feature name="invert" value="disabled"/>
+                        <pin_feature name="filter_off" value="disabled"/>
+                        <pin_feature name="slew1" value="standard"/>
+                        <pin_feature name="open_drain" value="disabled"/>
+                        <pin_feature name="ssel" value="disabled"/>
+                     </pin_features>
+                  </pin>
+               </pins>
+            </function>
+         </functions_list>
+      </pins>
+      <clocks name="Clocks" version="10.0" enabled="true" update_project_code="true">
+         <clocks_profile>
+            <processor_version>12.0.0</processor_version>
+         </clocks_profile>
+         <clock_configurations>
+            <clock_configuration name="BOARD_BootClockRUN" id_prefix="" prefix_user_defined="false">
+               <description></description>
+               <options/>
+               <dependencies>
+                  <dependency resourceType="PinSignal" resourceId="SYSCON.XTAL_P" description="&apos;XTAL_P&apos; (Pins tool id: SYSCON.XTAL_P, Clocks tool id: SYSCON.XTAL_P) needs to be routed" problem_level="1" source="Clocks:BOARD_BootClockRUN">
+                     <feature name="routed" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="PinSignal" resourceId="SYSCON.XTAL_N" description="&apos;XTAL_N&apos; (Pins tool id: SYSCON.XTAL_N, Clocks tool id: SYSCON.XTAL_N) needs to be routed" problem_level="1" source="Clocks:BOARD_BootClockRUN">
+                     <feature name="routed" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="SWComponent" resourceId="platform.drivers.common" description="Clocks initialization requires the COMMON Driver in the project." problem_level="2" source="Clocks:BOARD_BootClockRUN">
+                     <feature name="enabled" evaluation="equal" configuration="cm4">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <clock_sources>
+                  <clock_source id="PMC.fro_32k.outFreq" value="32.768 kHz" locked="false" enabled="false"/>
+                  <clock_source id="SYSCON.XTAL_32M.outFreq" value="32 MHz" locked="false" enabled="true"/>
+               </clock_sources>
+               <clock_outputs>
+                  <clock_output id="ASYNCAPB_clock.outFreq" value="48 MHz" locked="false" accuracy=""/>
+                  <clock_output id="DMIC_clock.outFreq" value="48 MHz" locked="false" accuracy=""/>
+                  <clock_output id="I2C_clock.outFreq" value="32 MHz" locked="false" accuracy=""/>
+                  <clock_output id="SPIFI_clock.outFreq" value="24 MHz" locked="false" accuracy=""/>
+                  <clock_output id="SPI_clock.outFreq" value="32 MHz" locked="false" accuracy=""/>
+                  <clock_output id="SYSTICK_CLK.outFreq" value="48 MHz" locked="false" accuracy=""/>
+                  <clock_output id="System_clock.outFreq" value="48 MHz" locked="false" accuracy=""/>
+                  <clock_output id="TRACE_CLK.outFreq" value="48 MHz" locked="false" accuracy=""/>
+                  <clock_output id="USART_clock.outFreq" value="32 MHz" locked="false" accuracy=""/>
+                  <clock_output id="WDT_clock.outFreq" value="32.768 kHz" locked="false" accuracy=""/>
+               </clock_outputs>
+               <clock_settings>
+                  <setting id="ASYNCAPBCTRL_EN_CFG" value="Enable" locked="false"/>
+                  <setting id="ENABLE_XTAL32MHZ" value="Enabled" locked="false"/>
+                  <setting id="PMC_PDRUNCFG_ENA_FRO32K_CFG" value="Enable" locked="false"/>
+                  <setting id="SYSCON.DMICCLKSEL.sel" value="SYSCON.MAINCLKSEL" locked="false"/>
+                  <setting id="SYSCON.I2CCLKSEL.sel" value="SYSCON.OSC32MCLKSEL" locked="false"/>
+                  <setting id="SYSCON.MAINCLKSEL.sel" value="PMC.fro_48m_clk" locked="false"/>
+                  <setting id="SYSCON.SPICLKSEL.sel" value="SYSCON.OSC32MCLKSEL" locked="false"/>
+                  <setting id="SYSCON.SPIFICLKDIV.scale" value="2" locked="true"/>
+                  <setting id="SYSCON.SPIFICLKSEL.sel" value="SYSCON.MAINCLKSEL" locked="false"/>
+                  <setting id="SYSCON.USARTCLKSEL.sel" value="SYSCON.OSC32MCLKSEL" locked="false"/>
+                  <setting id="SYSCON.WDTCLKSEL.sel" value="SYSCON.OSC32KCLKSEL" locked="false"/>
+               </clock_settings>
+               <called_from_default_init>true</called_from_default_init>
+            </clock_configuration>
+         </clock_configurations>
+      </clocks>
+      <dcdx name="DCDx" version="3.0" enabled="false" update_project_code="true">
+         <dcdx_profile>
+            <processor_version>N/A</processor_version>
+         </dcdx_profile>
+         <dcdx_configurations/>
+      </dcdx>
+      <periphs name="Peripherals" version="11.0" enabled="false" update_project_code="true">
+         <peripherals_profile>
+            <processor_version>N/A</processor_version>
+         </peripherals_profile>
+         <functional_groups/>
+         <components/>
+      </periphs>
+      <tee name="TEE" version="4.0" enabled="false" update_project_code="true">
+         <tee_profile>
+            <processor_version>N/A</processor_version>
+         </tee_profile>
+      </tee>
+   </tools>
+</configuration>

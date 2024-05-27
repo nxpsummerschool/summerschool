@@ -1,0 +1,17 @@
+#if defined(FSL_FEATURE_GPIO_HAS_INTERRUPT) && FSL_FEATURE_GPIO_HAS_INTERRUPT
+/*!
+ * @brief Configures the gpio pin interrupt.
+ *
+ * @param base GPIO base pointer.
+ * @param port GPIO port number
+ * @param pin GPIO pin number.
+ * @param config GPIO pin interrupt configuration..
+ */
+void GPIO_SetPinInterruptConfig(GPIO_Type *base, uint32_t port, uint32_t pin, gpio_interrupt_config_t *config)
+{
+    base->INTEDG[port] = base->INTEDG[port] | (config->mode << pin);
+
+    base->INTPOL[port] = base->INTPOL[port] | (config->polarity << pin);
+}
+...
+#endif /* FSL_FEATURE_GPIO_HAS_INTERRUPT */

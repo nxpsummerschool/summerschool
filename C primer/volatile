@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdint.h>
+
+static int pin=0;
+void pin_handler() //This is a ISR
+{
+    pin=1;
+}
+
+void main()
+{
+
+while(pin==0)
+{
+
+}
+
+printf("Pin has been pressed")
+}

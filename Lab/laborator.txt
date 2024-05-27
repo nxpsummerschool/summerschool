@@ -1,0 +1,45 @@
+	
+Day1
+	1. Blinky led
+	2. 2 Blinky leds
+	3. 2 Blinky leds with different blink rates
+	4. Read button and implement debounce
+	5. Toggle led on button press
+	6. Finite state machine with different blink rates based on 5 states
+
+
+Day2
+	1. PWM for 1 led
+	2. PWM with 2 leds
+	3. Communicate via UART
+		a. Hello world
+		b. Echo
+		c. Respond to certain message
+		d. Respond with all caps
+		e. Have a message to switch between to lower and to upper as response for message
+	4. Timer with 1 led and interrupt
+	5. Timer with 2 leds and interrupts
+		
+
+
+Day3
+	1. Dsiapcher that can call any test. A meesage will start a test, response will be test_name pass/fail
+	2. Nr de inmatriculare valid
+	3. Cate zerouri se termina valoarea n!
+	4. memcpy
+
+
+Day4
+	1. Cesar cipher
+	2. Kamasutra cipher
+	3. Automated test
+	4. Caesar cipher with block chaining cesar cipher gets shifted with the value of last encrypted byte in previous block
+	5. Automated test
+	6. Example with aes
+	7. Example with sha
+	
+curpins
+poza gpio
+
+
+.\DK6Programmer.exe -s COM7 -e FLASH -p .\K32W061_Project_ex3.bin

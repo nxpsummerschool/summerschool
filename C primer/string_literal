@@ -1,0 +1,5 @@
+char* p = "Hello";
+p[1] = 'M'; // Undefined behavior
+char a[] = "Hello";
+a[1] = 'M'; // OK: a is not a string literal
+
