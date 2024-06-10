@@ -1,0 +1,5 @@
+C:\Users\crist\Documents\MCUXpressoIDE_11.9.1_2170\workspace\LPC55S69_Project\drivers/fsl_clock.h:983:20:CLOCK_EnableClock	24	static
+C:\Users\crist\Documents\MCUXpressoIDE_11.9.1_2170\workspace\LPC55S69_Project\drivers/fsl_gpio.h:153:20:GPIO_PinWrite	24	static
+C:\Users\crist\Documents\MCUXpressoIDE_11.9.1_2170\workspace\LPC55S69_Project\drivers/fsl_gpio.h:172:24:GPIO_PinRead	24	static
+C:\Users\crist\Documents\MCUXpressoIDE_11.9.1_2170\workspace\LPC55S69_Project\drivers/fsl_iocon.h:182:22:IOCON_PinMuxSet	24	static
+../source/LPC55S69_Project.c:29:5:main	40	static
