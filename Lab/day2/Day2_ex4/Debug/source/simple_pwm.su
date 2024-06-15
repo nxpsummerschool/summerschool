@@ -1,0 +1,4 @@
+C:\Users\toade\Documents\MCUXpressoIDE_11.9.1_2170\workspace\Day2_ex1\drivers/fsl_ctimer.h:497:20:CTIMER_StartTimer	16	static
+C:\Users\toade\Documents\MCUXpressoIDE_11.9.1_2170\workspace\Day2_ex1\drivers/fsl_power.h:398:20:POWER_SetBodVbatLevel	16	static
+../source/simple_pwm.c:44:10:CTIMER_GetPwmPeriodValue	24	static
+../source/simple_pwm.c:58:5:main	56	static
