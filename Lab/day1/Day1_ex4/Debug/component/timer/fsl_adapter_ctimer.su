@@ -1,0 +1,16 @@
+C:\Users\crist\Documents\work\summer-school\summerschool\Lab\day1\LPC55S69_ex4\drivers/fsl_ctimer.h:497:20:CTIMER_StartTimer	16	static
+C:\Users\crist\Documents\work\summer-school\summerschool\Lab\day1\LPC55S69_ex4\drivers/fsl_ctimer.h:507:20:CTIMER_StopTimer	16	static
+../component/timer/fsl_adapter_ctimer.c:42:13:HAL_TimerInterruptHandle	24	static
+../component/timer/fsl_adapter_ctimer.c:53:6:ctimer0_match0_callback	16	static
+../component/timer/fsl_adapter_ctimer.c:59:6:ctimer1_match0_callback	16	static
+../component/timer/fsl_adapter_ctimer.c:65:27:HAL_CTimerConfigTimeout	64	static
+../component/timer/fsl_adapter_ctimer.c:99:20:HAL_TimerInit	32	static
+../component/timer/fsl_adapter_ctimer.c:116:6:HAL_TimerDeinit	24	static
+../component/timer/fsl_adapter_ctimer.c:124:6:HAL_TimerEnable	24	static
+../component/timer/fsl_adapter_ctimer.c:132:6:HAL_TimerDisable	24	static
+../component/timer/fsl_adapter_ctimer.c:140:6:HAL_TimerInstallCallback	32	static
+../component/timer/fsl_adapter_ctimer.c:148:10:HAL_TimerGetMaxTimeout	96	static
+../component/timer/fsl_adapter_ctimer.c:161:10:HAL_TimerGetCurrentTimerCount	72	static
+../component/timer/fsl_adapter_ctimer.c:168:20:HAL_TimerUpdateTimeout	16	static
+../component/timer/fsl_adapter_ctimer.c:173:6:HAL_TimerExitLowpower	16	static
+../component/timer/fsl_adapter_ctimer.c:178:6:HAL_TimerEnterLowpower	16	static
