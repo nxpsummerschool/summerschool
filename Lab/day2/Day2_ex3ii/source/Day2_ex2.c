@@ -51,7 +51,7 @@ int main(void) {
 	   while (1)
 	   {
 		   USART_ReadBlocking(USART0, &ch, 1);
-		   USART_ReadBlocking(USART0, &len, 2);
+		   USART_ReadBlocking(USART0, (uint8_t*)(&len), 2);
 		   USART_ReadBlocking(USART0, buf, len);
 
 		   switch (ch)

@@ -34,7 +34,7 @@ int main(void) {
     BOARD_InitDebugConsole();
 #endif
 
-    char ch;
+    uint8_t ch;
 
     /* Enter an infinite loop, just incrementing a counter. */
 	   uint8_t function = 0;//0 is lowercase
