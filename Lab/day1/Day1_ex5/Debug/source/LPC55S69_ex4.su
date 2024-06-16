@@ -1,0 +1,3 @@
+C:\Users\crist\Documents\MCUXpressoIDE_11.9.1_2170\workspace\LPC55S69_ex4\drivers/fsl_gpio.h:153:20:GPIO_PinWrite	24	static
+C:\Users\crist\Documents\MCUXpressoIDE_11.9.1_2170\workspace\LPC55S69_ex4\drivers/fsl_gpio.h:172:24:GPIO_PinRead	24	static
+../source/LPC55S69_ex4.c:26:5:main	32	static

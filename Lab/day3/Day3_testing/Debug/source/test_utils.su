@@ -1,0 +1,3 @@
+../source/test_utils.c:11:14:test_fencing	24	static
+../source/test_utils.c:28:14:test_check_result	32	static
+../source/test_utils.c:41:10:test_add_fencing	24	static
