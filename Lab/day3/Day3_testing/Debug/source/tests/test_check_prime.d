@@ -1,8 +1,0 @@
-source/tests/test_check_prime.o source/tests/test_check_prime.d: \
- ../source/tests/test_check_prime.c \
- C:\Users\crist\Documents\MCUXpressoIDE_11.9.1_2170\workspace\Day3_testing\source/tests/test_functions.h \
- C:\Users\crist\Documents\MCUXpressoIDE_11.9.1_2170\workspace\Day3_testing\source/src/functions_under_test.h \
- C:\Users\crist\Documents\MCUXpressoIDE_11.9.1_2170\workspace\Day3_testing\source/test_utils.h
-C:\Users\crist\Documents\MCUXpressoIDE_11.9.1_2170\workspace\Day3_testing\source/tests/test_functions.h:
-C:\Users\crist\Documents\MCUXpressoIDE_11.9.1_2170\workspace\Day3_testing\source/src/functions_under_test.h:
-C:\Users\crist\Documents\MCUXpressoIDE_11.9.1_2170\workspace\Day3_testing\source/test_utils.h:
