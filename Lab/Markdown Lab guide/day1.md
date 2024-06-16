@@ -21,4 +21,4 @@ Read the button and implement a debounce scheme, use an LED to assess if the deb
 
 5. Finite state machine with different blink rates based on 5 states
 
-<img src="pics/lab1_ex5_states.png" alt="Lab1_FSM"/>
+![Lab1_FSM](pics/lab1_ex5_states.png "Lab1_FSM")
