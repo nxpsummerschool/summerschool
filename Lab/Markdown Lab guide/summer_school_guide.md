@@ -89,13 +89,10 @@ Some useful tips:
   - source: `drivers/fsl_usart.c` - contains C implementation for internal and external functionalities.
   - useful C functions:
 
-        ~~~~C
-        status_t USART_ReadBlocking(USART_Type *base, uint8_t*data, size_t length);
-        ~~~~
-        
-        ~~~~C
-        status_t USART_WriteBlocking(USART_Type *base, const uint8_t*data, size_t length);
-        ~~~~
+    ~~~~C
+    status_t USART_ReadBlocking(USART_Type *base, uint8_t*data, size_t length);
+    status_t USART_WriteBlocking(USART_Type *base, const uint8_t*data, size_t length);
+    ~~~~
 
 **Useful Links:**
 
