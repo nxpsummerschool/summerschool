@@ -1,5 +1,5 @@
-C:\Users\crist\Documents\work\summer-school\summerschool\Lab\day1\LPC55S69_ex5\drivers/fsl_ctimer.h:497:20:CTIMER_StartTimer	16	static
-C:\Users\crist\Documents\work\summer-school\summerschool\Lab\day1\LPC55S69_ex5\drivers/fsl_ctimer.h:507:20:CTIMER_StopTimer	16	static
+W:\work\summerschool\Lab\day1\Day1_ex5\drivers/fsl_ctimer.h:497:20:CTIMER_StartTimer	16	static
+W:\work\summerschool\Lab\day1\Day1_ex5\drivers/fsl_ctimer.h:507:20:CTIMER_StopTimer	16	static
 ../component/timer/fsl_adapter_ctimer.c:42:13:HAL_TimerInterruptHandle	24	static
 ../component/timer/fsl_adapter_ctimer.c:53:6:ctimer0_match0_callback	16	static
 ../component/timer/fsl_adapter_ctimer.c:59:6:ctimer1_match0_callback	16	static

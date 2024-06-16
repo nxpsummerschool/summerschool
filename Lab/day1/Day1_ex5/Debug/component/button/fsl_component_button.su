@@ -1,5 +1,5 @@
-C:\Users\crist\Documents\work\summer-school\summerschool\Lab\day1\LPC55S69_ex5\drivers/fsl_common_arm.h:788:24:DisableGlobalIRQ	16	static
-C:\Users\crist\Documents\work\summer-school\summerschool\Lab\day1\LPC55S69_ex5\drivers/fsl_common_arm.h:814:20:EnableGlobalIRQ	24	static
+W:\work\summerschool\Lab\day1\Day1_ex5\drivers/fsl_common_arm.h:788:24:DisableGlobalIRQ	16	static
+W:\work\summerschool\Lab\day1\Day1_ex5\drivers/fsl_common_arm.h:814:20:EnableGlobalIRQ	24	static
 ../component/button/fsl_component_button.c:114:13:BUTTON_NotificationUpdate	16	static
 ../component/button/fsl_component_button.c:133:13:BUTTON_Event	24	static
 ../component/button/fsl_component_button.c:208:13:BUTTON_Task	32	static

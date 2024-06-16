@@ -1,5 +1,5 @@
-C:\Users\crist\Documents\work\summer-school\summerschool\Lab\day1\LPC55S69_ex5\CMSIS/core_cm33.h:2378:22:__NVIC_EnableIRQ	16	static
-C:\Users\crist\Documents\work\summer-school\summerschool\Lab\day1\LPC55S69_ex5\CMSIS/core_cm33.h:2416:22:__NVIC_DisableIRQ	16	static
+W:\work\summerschool\Lab\day1\Day1_ex5\CMSIS/core_cm33.h:2378:22:__NVIC_EnableIRQ	16	static
+W:\work\summerschool\Lab\day1\Day1_ex5\CMSIS/core_cm33.h:2416:22:__NVIC_DisableIRQ	16	static
 ../drivers/fsl_clock.h:983:20:CLOCK_EnableClock	24	static
 ../drivers/fsl_clock.h:993:20:CLOCK_DisableClock	24	static
 ../drivers/fsl_common_arm.h:570:24:EnableIRQ	24	static

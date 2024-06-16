@@ -1,9 +1,9 @@
-C:\Users\crist\Documents\work\summer-school\summerschool\Lab\day1\LPC55S69_ex5\CMSIS/core_cm33.h:2575:22:__NVIC_SetPriority	16	static
-C:\Users\crist\Documents\work\summer-school\summerschool\Lab\day1\LPC55S69_ex5\drivers/fsl_clock.h:983:20:CLOCK_EnableClock	24	static
-C:\Users\crist\Documents\work\summer-school\summerschool\Lab\day1\LPC55S69_ex5\drivers/fsl_common_arm.h:788:24:DisableGlobalIRQ	16	static
-C:\Users\crist\Documents\work\summer-school\summerschool\Lab\day1\LPC55S69_ex5\drivers/fsl_common_arm.h:814:20:EnableGlobalIRQ	24	static
-C:\Users\crist\Documents\work\summer-school\summerschool\Lab\day1\LPC55S69_ex5\drivers/fsl_gpio.h:153:20:GPIO_PinWrite	24	static
-C:\Users\crist\Documents\work\summer-school\summerschool\Lab\day1\LPC55S69_ex5\drivers/fsl_gpio.h:172:24:GPIO_PinRead	24	static
+W:\work\summerschool\Lab\day1\Day1_ex5\CMSIS/core_cm33.h:2575:22:__NVIC_SetPriority	16	static
+W:\work\summerschool\Lab\day1\Day1_ex5\drivers/fsl_clock.h:983:20:CLOCK_EnableClock	24	static
+W:\work\summerschool\Lab\day1\Day1_ex5\drivers/fsl_common_arm.h:788:24:DisableGlobalIRQ	16	static
+W:\work\summerschool\Lab\day1\Day1_ex5\drivers/fsl_common_arm.h:814:20:EnableGlobalIRQ	24	static
+W:\work\summerschool\Lab\day1\Day1_ex5\drivers/fsl_gpio.h:153:20:GPIO_PinWrite	24	static
+W:\work\summerschool\Lab\day1\Day1_ex5\drivers/fsl_gpio.h:172:24:GPIO_PinRead	24	static
 ../component/gpio/fsl_adapter_lpc_gpio.c:94:13:HAL_GpioInterruptCallback	16	static
 ../component/gpio/fsl_adapter_lpc_gpio.c:103:13:HAL_GpioInterruptHandle	24	static
 ../component/gpio/fsl_adapter_lpc_gpio.c:120:26:HAL_GpioConflictSearch	16	static

@@ -1,4 +1,4 @@
-C:\Users\crist\Documents\work\summer-school\summerschool\Lab\day1\LPC55S69_ex5\drivers/fsl_power.h:385:20:POWER_DisablePD	16	static
+W:\work\summerschool\Lab\day1\Day1_ex5\drivers/fsl_power.h:385:20:POWER_DisablePD	16	static
 ../board/clock_config.c:51:6:BOARD_InitBootClocks	8	static
 ../board/clock_config.c:78:6:BOARD_BootClockFRO12M	8	static
 ../board/clock_config.c:127:6:BOARD_BootClockFROHF96M	8	static
