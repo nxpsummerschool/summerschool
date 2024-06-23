@@ -1,4 +1,8 @@
-# Lab 2 exercises
+---
+title: "Lab 2 exercises"
+date:  June 22, 2024
+output: pdf_document
+---
 
 1. Import the example for PWM: `ctimer_pwm_example`. Answer the following questions:
 
@@ -37,4 +41,4 @@
     Odd or even from the point of view or position in the input(first character is even(position 0) second character is odd(position 1) etc.
     3. Add one more tag: b -> Remove all non printable characters from the input
 
-4. Combine the pwm and the USART exercises such that you enable PWM on the BLUE led and create a command to change the duty cycle using `CTIMER_UpdatePwmDutycycle`. The command will receive any number between 1 and 99. If the command is valid the application will send 'success' on UART after doing the setting, othewise it will send 'fail' and ignore the command.
+4. Combine the PWM and the USART exercises such that you enable PWM on the BLUE led and create a command to change the duty cycle using `CTIMER_UpdatePwmDutycycle`. The command will receive any number between 1 and 99. If the command is valid the application will send 'success' on UART after doing the setting, othewise it will send 'fail' and ignore the command.

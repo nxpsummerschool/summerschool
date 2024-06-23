@@ -1,4 +1,8 @@
-# Lab 4 exercises
+---
+title: "Lab 4 exercises"
+date:  June 22, 2024
+output: pdf_document
+---
 
 1. Implement the Caesar cipher using a TLV enconding on UART. Have separate commands for encryption and decryption. Shift by 3 characters.
 2. Implement the Caesar cipher with shift as an input. Use the first byte from value(the V in TLV) for the shift value(value can be only positive).

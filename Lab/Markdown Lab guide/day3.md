@@ -1,4 +1,8 @@
-# Lab 3 exercises
+---
+title: "Lab 3 exercises"
+date:  June 22, 2024
+output: pdf_document
+---
 
 1. Test the `check_prime` function implementation (declaration available at: `source\src\FUTs.h`, implementation available at: `source\src\check_prime.c`).
     a. Identify test scenarios.

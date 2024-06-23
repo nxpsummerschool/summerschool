@@ -1,5 +1,8 @@
-
-# Summer School Guide
+---
+title: "Summer School Guide"
+date:  June 22, 2024
+output: pdf_document
+---
 
 ## Tools
 
@@ -20,9 +23,9 @@ The LPCXpresso55S69 and LPCXpresso55S28 boards include the following features:
 - High / full speed USB port with micro A/B connector for the host or device functionality
 - Reset button
 
-![Board Elements Overview 1](pics/lab_guide_board1.png "Board Elements Overview 1")
+![Board Elements Overview 1](pics/lab_guide_board1.png "Board Elements Overview 1"){ width=700px }
 
-![Board Elements Overview 2](pics/lab_guide_board2.png "Board Elements Overview 2")
+![Board Elements Overview 2](pics/lab_guide_board2.png "Board Elements Overview 2"){ width=700px }
 
 Why do we need SDKs?
 
@@ -37,8 +40,8 @@ An SDK can be downloaded by searching for the development board name and accessi
 
 **Useful Links:**
 
-- [Development Board Purchase details, documentation and SDK](https://www.nxp.com/design/design-center/software/development-software/mcuxpresso-software-and-tools-/lpcxpresso-boards/lpcxpresso55s69-development-board:LPC55S69-EVK)
-- [MCUXpresso SDK Builder](https://mcuxpresso.nxp.com/en/welcome)
+- [Development Board Purchase details, documentation and SDK](https://www.nxp.com/design/design-center/software/development-software/mcuxpresso-software-and-tools-/lpcxpresso-boards/lpcxpresso55s69-development-board:LPC55S69-EVK){ width=700px }
+- [MCUXpresso SDK Builder](https://mcuxpresso.nxp.com/en/welcome){ width=700px }
 
 ### MCUXpresso IDE
 
@@ -48,33 +51,33 @@ The MCUXpresso IDE offers advanced editing, compiling, and debugging features wi
 
 1. Select Working Directory
 
-    ![Select Workspace](pics/lab_guide_workspace.png "Select Workspace")
+    ![Select Workspace](pics/lab_guide_workspace.png "Select Workspace"){ width=500px }
 
 2. Welcome Page
 
     Either use this page to create/import projects, or dismiss it and go to the main IDE view.
 
-    ![Welcome Page](pics/lab_guide_welcome.png "Welcome Page")
+    ![Welcome Page](pics/lab_guide_welcome.png "Welcome Page"){ width=600px }
 
 3. Create New Project
 
-    ![Create new project](pics/lab_guide_new_project.png "Create new project")
+    ![Create new project](pics/lab_guide_new_project.png "Create new project"){ width=600px }
 
 4. Select Development Board
 
-    ![SDK Wizard](pics/lab_guide_SDK_wizard.png "SDK Wizard")
+    ![SDK Wizard](pics/lab_guide_SDK_wizard.png "SDK Wizard"){ width=600px }
 
 5. Project Name, Desired APIs
 
     The next step will allow us to give our project a representative name, and include the desired software components (e.g. the driver for `ctimer`).
 
-    ![SDK Wizard - Project Config](pics/lab_guide_project_config.png "SDK Wizard - Project Config")
+    ![SDK Wizard - Project Config](pics/lab_guide_project_config.png "SDK Wizard - Project Config"){ width=600px }
 
 The project structure is presented below.
-![Project Structure](pics/lab_guide_my_project.png "Project Structure")
+![Project Structure](pics/lab_guide_my_project.png "Project Structure"){ width=600px }
 
 The application can now be built and executed.
-![Debug](pics/lab_guide_debug.png "Debug")
+![Debug](pics/lab_guide_debug.png "Debug"){ width=600px }
 
 **Note**: Remember to TERMINATE the program before rebuilding, or triggering another debug session.
 
@@ -82,7 +85,7 @@ Some useful tips:
 
 - the `main` function (our application entry point) will be inside `source/<project_name>.c`.
 - the `board` folder provides information and API interfaces for board-specific components, such as on-board LEDs, buttons, and communication interfaces. The macro definitions within these files map out the connections to these components, which can also be verified by referring to the board's schematic.
-    ![Board Init functions](pics/lab_guide_board_folder.png)
+    ![Board Init functions](pics/lab_guide_board_folder.png){ width=600px }
 - the `drivers` folder provides the drivers for all included components (on step 5), such as the USART driver.
 
   - header: `drivers/fsl_usart.h` - contains macro definitions and functions prototypes.
@@ -96,7 +99,7 @@ Some useful tips:
 
 **Useful Links:**
 
-- [Download link & User Guide](https://www.nxp.com/design/design-center/software/development-software/mcuxpresso-software-and-tools-/mcuxpresso-integrated-development-environment-ide:MCUXpresso-IDE)
+- [Download link & User Guide](https://www.nxp.com/design/design-center/software/development-software/mcuxpresso-software-and-tools-/mcuxpresso-integrated-development-environment-ide:MCUXpresso-IDE){ width=600px }
 
 ### Hercules
 
@@ -104,12 +107,12 @@ Hercules SETUP utility is a useful serial port terminal (RS-485 or RS-232 termin
 
 This is the output we will receive when running the default `main` function generated when creating new projects. Additionally, we can send ASCII characters. By checking the `HEX` box, we can send hexadecimal strings to the device.
 
-![Hello World](pics/lab_guide_hercules.png "Hello World")
+![Hello World](pics/lab_guide_hercules.png "Hello World"){ width=700px }
 
 To identify the `COM` port of the device, open `Device Manager`.
 
-![Device Manager](pics/lab_guide_dev_manager.png "Device Manager")
+![Device Manager](pics/lab_guide_dev_manager.png "Device Manager"){ width=700px }
 
 **Useful Links:**
 
-- [Download Hercules](https://www.hw-group.com/software/hercules-setup-utility)
+- [Download Hercules](https://www.hw-group.com/software/hercules-setup-utility){ width=700px }

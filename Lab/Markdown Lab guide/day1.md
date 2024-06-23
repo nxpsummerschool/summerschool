@@ -1,4 +1,8 @@
-# Lab 1 exercises
+---
+title: "Lab 1 exercises"
+date:  June 22, 2024
+output: pdf_document
+---
 
 1. Blinky led
 Use the function available in drivers/fsl_gpio.h and the definitions available in board/board.h to create a led that blinks.
@@ -21,4 +25,4 @@ Read the button and implement a debounce scheme, use an LED to assess if the deb
 
 5. Finite state machine with different blink rates based on 5 states
 
-![Lab1_FSM](pics/lab1_ex5_states.png "Lab1_FSM")
+![Lab1_FSM](pics/lab1_ex5_states.png "Lab1_FSM"){ width=600px }
