@@ -74,10 +74,10 @@ The MCUXpresso IDE offers advanced editing, compiling, and debugging features wi
     ![SDK Wizard - Project Config](pics/lab_guide_project_config.png "SDK Wizard - Project Config"){ width=600px }
 
 The project structure is presented below.
-![Project Structure](pics/lab_guide_my_project.png "Project Structure"){ width=600px }
+![Project Structure](pics/lab_guide_my_project.png "Project Structure"){ width=700px }
 
 The application can now be built and executed.
-![Debug](pics/lab_guide_debug.png "Debug"){ width=600px }
+![Debug](pics/lab_guide_debug.png "Debug"){ width=700px }
 
 **Note**: Remember to TERMINATE the program before rebuilding, or triggering another debug session.
 
