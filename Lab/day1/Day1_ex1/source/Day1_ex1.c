@@ -54,8 +54,5 @@ int main(void) {
         i++;
 
         for (volatile int j=0; j<=0xFFFFFF; j++);
-        /* 'Dummy' NOP to allow source level single stepping of
-            tight while() loop */
-        __asm volatile ("nop");
     }
 }
