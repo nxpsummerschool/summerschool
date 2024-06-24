@@ -1,12 +1,16 @@
+/*
+ * test_utils.h
+ *
+ *  Created on: 27 Jun 2023
+ *      Author: nxf72157
+ */
 
 #ifndef TEST_UTILS_H_
 #define TEST_UTILS_H_
 
 #include <stdint.h>
 
-// define fencing size
 #define FENCING_SIZE 	4
-// define fencing value
 #define INPUT_FENCING 	0xDE
 #define OUTPUT_FENCING 	0xAD
 

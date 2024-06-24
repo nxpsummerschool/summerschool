@@ -21,8 +21,6 @@
 #include <string.h>
 #include <test_utils.h>
 #include <tests/test_functions.h>
-#include <src/functions_under_test.h>
-
 /* TODO: insert other definitions and declarations here. */
 
 /*
@@ -39,15 +37,16 @@ int main(void) {
     BOARD_InitDebugConsole();
 #endif
 
-    /* ch used to select between tests */
-    uint8_t ch;
-    /* len of the buffer to be read from the host side */
-    uint8_t len;
-    /* allocated buffer to be read from the host side */
-    uint8_t buf[2048];
-    /* error string to be used for printing an error message */
-    uint8_t error_string[256] = {"\0"};
-
+    /* Get the default source clock frequency */
+    CLOCK_EnableClock(kCLOCK_Iocon);
+   /* ch used to select between tests */
+   uint8_t ch;
+   /* len of the buffer to be read from the host side */
+   uint8_t len;
+   /* allocated buffer to be read from the host side */
+   uint8_t buf[2048];
+   /* error string to be used for printing an error message */
+   uint8_t error_string[256] = {"\0"};
 
    testStatus_t status = STATUS_PASS;
 
@@ -60,16 +59,16 @@ int main(void) {
 	   switch (ch)
 	   {
 		   case 1:
-			   // Call test_check_prime routine
+			   status = test_memcopy((memcpy_func*)memcopy_1, error_string, buf);
 			   break;
 		   case 2:
-			   // Call test_check_memcopy routine to test the memcopy_1 function
+			   status = test_memcopy((memcpy_func*)memcopy_2, error_string, buf);
 			   break;
 		   case 3:
-			   // Call test_check_memcopy routine to test the memcopy_2 function
+			   status = test_memcopy((memcpy_func*)memcopy_3, error_string, buf);
 			   break;
 		   case 4:
-			   // Call test_check_memcopy routine to test the memcopy_3 function
+			   status = test_check_prime(error_string);
 			   break;
 		   default:
 			   sprintf((char *) error_string, "No tests were selected!! \n");
@@ -80,5 +79,5 @@ int main(void) {
 		   sprintf((char *) error_string, "Test %u is passing!\n", ch);
 	   USART_WriteBlocking(USART0, error_string, strlen((char *)error_string));
    }
-	return 0 ;
+   return 0 ;
 }
