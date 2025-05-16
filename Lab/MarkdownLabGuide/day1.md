@@ -6,7 +6,8 @@ output: pdf_document
 
 1. Blinky led
 Use the function available in drivers/fsl_gpio.h and the definitions available in board/board.h to create a led that blinks.
-**Note**: this processor is running at 96MHz we need to have a delay for to see the blinking. Use 0xFFFFFF in an empty for loop to create a delay.
+
+    **Note**: this processor is running at 96MHz we need to have a delay for to see the blinking. Use 0xFFFFFF in an empty for loop to create a delay.
 Use `GPIO_PinInit` and `GPIO_PinWrite`/`GPIO_PortToggle` for this exercise.
 
 2. Blinky led for Red and Blue lights of the RGB LED

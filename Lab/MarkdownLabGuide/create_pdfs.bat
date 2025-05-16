@@ -7,7 +7,8 @@ for %%x in (
         day1
         day2
         day3
-        day4
+        day4_ciphers
+        day4_ciphermodes
         summer_school_guide
        ) do (
          echo Processing %%x
