@@ -1,10 +1,10 @@
 ---
 title: "Lab 3 exercises"
-date:  June 22, 2024
+date:  June 25, 2025
 output: pdf_document
 ---
 
-1. Test the `check_prime` function implementation (declaration available at: `source\src\FUTs.h`, implementation available at: `source\src\check_prime.c`).
+1. Test the `check_prime` function implementation (declaration available at: `source\src\functions_under_test.h`, implementation available at: `source\src\check_prime.c`).
     a. Identify test scenarios.
     b. Implement a test function named `test_check_prime` using this source file: `source\tests\test_check_prime.c`. The test function should run multiple test scenarios and provide a descriptive return code and message (using `error_message`) in case of failure. The Function Under Test (FUT) will be called inside this test function.
 
