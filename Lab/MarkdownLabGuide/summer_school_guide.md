@@ -1,6 +1,6 @@
 ---
 title: "Summer School Guide"
-date:  June 22, 2024
+date:  June 17, 2025
 output: pdf_document
 ---
 
@@ -40,66 +40,64 @@ An SDK can be downloaded by searching for the development board name and accessi
 
 **Useful Links:**
 
-- [Development Board Purchase details, documentation and SDK](https://www.nxp.com/design/design-center/software/development-software/mcuxpresso-software-and-tools-/lpcxpresso-boards/lpcxpresso55s69-development-board:LPC55S69-EVK){ width=700px }
+- [Development Board Purchase details, and documentation](https://www.nxp.com/design/design-center/software/development-software/mcuxpresso-software-and-tools-/lpcxpresso-boards/lpcxpresso55s69-development-board:LPC55S69-EVK){ width=700px }
+- [IDE: Extensions for VS Code](https://www.nxp.com/design/design-center/software/development-software/mcuxpresso-software-and-tools-/mcuxpresso-for-visual-studio-code:MCUXPRESSO-VSC)
 - [MCUXpresso SDK Builder](https://mcuxpresso.nxp.com/en/welcome){ width=700px }
 
-### MCUXpresso IDE
+### MCUXpresso For VS Code
 
-The MCUXpresso IDE offers advanced editing, compiling, and debugging features with the addition of MCU-specific debugging views, code trace and profiling, multicore debugging, and integrated configuration tools.
+ MCUXpresso for Visual Studio Code (VS Code) provides an optimized embedded developer experience for code editing and development. MCUXpresso for VS Code supports NXP MCUs based on Arm® Cortex®-M cores including MCX, LPC, Kinetis and i.MX RT. MCUXpresso for VS Code allows developers the flexibility to work on projects from Zephyr, or MCUXpresso SDK in conjunction with Open-CMSIS-Packs.
+
+The VS Code extension organizes relevant information including installed SDK repositories, available debug probes, user projects and links to help get started. A popular QuickStart panel provides access to the most popular actions. Intellisense improves upon standard auto-complete and auto-format features. The debug view provides access to breakpoints, variable/register views, call stack and thread awareness while using normal debug controls to step through the code.
 
 #### Getting started with the MCUXpresso IDE
 
-1. Select Working Directory
+1. Select the **MCUXpresso for VS Code** in the sidebar and click on **Import Repository**. Please use the folder specified by the Lab assistants on this step, the CHANGEME folder is a placeholder.
 
     ![Select Workspace](pics/lab_guide_workspace.png "Select Workspace"){ width=500px }
 
-2. Welcome Page
+2. Click on **New Project Wizard**
 
-    Either use this page to create/import projects, or dismiss it and go to the main IDE view.
+    Select in the first dropdown **MCUXpresso SDK**.
+    Select in the second dropdown our board: lpc55s69.
+    Select in the repository the only entry available(the one we just installed).
+    Select in the toolchain the only entry available.
+    Select in the ProjectName: *yourname*_day*x*_ex*y*, for example: toader_day1_ex1
+    Select in location: the temporary location you will use for these project, will be communicated by the lab assistants.
 
     ![Welcome Page](pics/lab_guide_welcome.png "Welcome Page"){ width=600px }
 
-3. Create New Project
+    Hit create project
 
-    ![Create new project](pics/lab_guide_new_project.png "Create new project"){ width=600px }
-
-4. Select Development Board
-
-    ![SDK Wizard](pics/lab_guide_SDK_wizard.png "SDK Wizard"){ width=600px }
-
-5. Project Name, Desired APIs
-
-    The next step will allow us to give our project a representative name, and include the desired software components (e.g. the driver for `ctimer`).
-
-    ![SDK Wizard - Project Config](pics/lab_guide_project_config.png "SDK Wizard - Project Config"){ width=600px }
-
-The project structure is presented below.
+The project structure is presented below. Thye project can be downloaded(to the board) and debugged with the green play byutton highlighted in the red square.
+The main two parts of interest for files are **Project Files** and **Repository**.
 ![Project Structure](pics/lab_guide_my_project.png "Project Structure"){ width=700px }
 
-The application can now be built and executed.
+In **Project Files** will will find all the filkes corresponding to your project. All the changes we will make in our exercises will be here.
+In the 
+In the **Repository** we will find all the drivers that we will need throughout the days. To be more precise in `Repository/devices/LPC55S69/drivers/fsl_gpio.h` we will find the gpio driver header with doxygen documentation for each function.
+We will not change any code in **Repository** this is just a collection of drivers we need!
 ![Debug](pics/lab_guide_debug.png "Debug"){ width=700px }
-
-**Note**: Remember to TERMINATE the program before rebuilding, or triggering another debug session.
 
 Some useful tips:
 
-- the `main` function (our application entry point) will be inside `source/<project_name>.c`.
-- the `board` folder provides information and API interfaces for board-specific components, such as on-board LEDs, buttons, and communication interfaces. The macro definitions within these files map out the connections to these components, which can also be verified by referring to the board's schematic.
+- the `main` function (our application entry point) will be inside **Project Files**.
+- the `board` header file provides information and API interfaces for board-specific components, such as on-board LEDs, buttons, and communication interfaces. The macro definitions within these files map out the connections to these components, which can also be verified by referring to the board's schematic.
     ![Board Init functions](pics/lab_guide_board_folder.png){ width=600px }
-- the `drivers` folder provides the drivers for all included components (on step 5), such as the USART driver.
+- the `drivers` folder provides the drivers for all included components, such as the USART driver.
 
-  - header: `drivers/fsl_usart.h` - contains macro definitions and functions prototypes.
-  - source: `drivers/fsl_usart.c` - contains C implementation for internal and external functionalities.
+  - header: `Repository/devices/LPC55S69/drivers/fsl_usart.h` - contains macro definitions and functions prototypes.
+  - source: `Repository/devices/LPC55S69/drivers/fsl_usart.c` - contains C implementation for internal and external functionalities.
   - useful C functions:
 
-    ~~~~C
-    status_t USART_ReadBlocking(USART_Type *base, uint8_t*data, size_t length);
-    status_t USART_WriteBlocking(USART_Type *base, const uint8_t*data, size_t length);
-    ~~~~
+~~~~C
+status_t USART_ReadBlocking(USART_Type *base, uint8_t*data, size_t length);
+status_t USART_WriteBlocking(USART_Type *base, const uint8_t*data, size_t length);
+~~~~
 
 **Useful Links:**
 
-- [Download link & User Guide](https://www.nxp.com/design/design-center/software/development-software/mcuxpresso-software-and-tools-/mcuxpresso-integrated-development-environment-ide:MCUXpresso-IDE){ width=600px }
+- [Getting Started Guide](https://www.nxp.com/design/design-center/training/TIP-GETTING-STARTED-WITH-MCUXPRESSO-FOR-VS-CODE){ width=600px }
 
 ### Hercules
 
