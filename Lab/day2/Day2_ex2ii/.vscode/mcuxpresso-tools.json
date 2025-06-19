@@ -1,0 +1,15 @@
+{
+  "version": "25.3",
+  "toolchainPath": "C:/Users/toade/.mcuxpressotools/arm-gnu-toolchain-13.2.Rel1-mingw-w64-i686-arm-none-eabi",
+  "linkedProjects": [],
+  "trustZoneType": "none",
+  "multicoreType": "none",
+  "projectType": "sdk-freestanding",
+  "sdk": {
+    "path": "c:\\CHANGEME\\SDK_25_03_00_LPCXpresso55S69",
+    "version": "25.03.00",
+    "boardId": "lpcxpresso55s69",
+    "deviceId": "LPC55S69",
+    "coreId": "cm33_core0_LPC55S69"
+  }
+}
