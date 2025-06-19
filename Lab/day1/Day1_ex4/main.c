@@ -60,7 +60,7 @@ int main(void)
 		{
 			count++;
 			/* Add delay for debouncing */
-			for (volatile int j=0;j<=0xFFFFF;j++);
+			for (volatile int j=0;j<=0xFFFF;j++);
 		}
 		else
 		{

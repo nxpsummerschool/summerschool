@@ -46,14 +46,14 @@ int main(void)
     /* Initialize GPIO functionality on the RGB pins */
     GPIO_PinInit(BOARD_LED_BLUE_GPIO,   BOARD_LED_BLUE_GPIO_PORT,   BOARD_LED_BLUE_GPIO_PIN,    &LED_config);
     GPIO_PinInit(BOARD_LED_RED_GPIO,    BOARD_LED_RED_GPIO_PORT,    BOARD_LED_RED_GPIO_PIN,     &LED_config);
-    GPIO_PinInit(BOARD_LED_GREEN_GPIO,  BOARD_LED_GREEN_GPIO_PORT,  BOARD_LED_GREEN_GPIO_PIN,   &LED_config);
+    //GPIO_PinInit(BOARD_LED_GREEN_GPIO,  BOARD_LED_GREEN_GPIO_PORT,  BOARD_LED_GREEN_GPIO_PIN,   &LED_config);
 
     /* Turn the Blue LED OFF */
     GPIO_PinWrite(BOARD_LED_BLUE_GPIO,  BOARD_LED_BLUE_GPIO_PORT,   BOARD_LED_BLUE_GPIO_PIN,    1U);
     /* Turn the Red LED ON */
     GPIO_PinWrite(BOARD_LED_RED_GPIO,   BOARD_LED_RED_GPIO_PORT,    BOARD_LED_RED_GPIO_PIN,     0U);
     /* Turn the Green LED ON */
-    GPIO_PinWrite(BOARD_LED_GREEN_GPIO, BOARD_LED_GREEN_GPIO_PORT,  BOARD_LED_GREEN_GPIO_PIN,    0U);
+    //GPIO_PinWrite(BOARD_LED_GREEN_GPIO, BOARD_LED_GREEN_GPIO_PORT,  BOARD_LED_GREEN_GPIO_PIN,    0U);
 
     /* Force the counter to be placed into memory. */
     volatile static int i = 0;
@@ -65,7 +65,7 @@ int main(void)
         /* Every 2 loop iterations, the LED changes */
         GPIO_PinWrite(BOARD_LED_RED_GPIO,   BOARD_LED_RED_GPIO_PORT,    BOARD_LED_RED_GPIO_PIN,     (i >> 1) % 2);
         /* Every 4 loop iterations, the LED changes */
-        GPIO_PinWrite(BOARD_LED_GREEN_GPIO, BOARD_LED_GREEN_GPIO_PORT,  BOARD_LED_GREEN_GPIO_PIN,   (i >> 2) % 2);
+        //GPIO_PinWrite(BOARD_LED_GREEN_GPIO, BOARD_LED_GREEN_GPIO_PORT,  BOARD_LED_GREEN_GPIO_PIN,   (i >> 2) % 2);
 
         /* Do not forget the counter*/
         i++;
