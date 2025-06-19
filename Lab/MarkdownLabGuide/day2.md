@@ -1,6 +1,6 @@
 ---
 title: "Lab 2 exercises"
-date:  June 22, 2024
+date:  June 19, 2025
 output: pdf_document
 ---
 
