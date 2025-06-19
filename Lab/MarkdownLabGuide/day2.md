@@ -1,18 +1,22 @@
 ---
 title: "Lab 2 exercises"
-date:  June 22, 2024
+date:  June 19, 2025
 output: pdf_document
 ---
 
-1. Import the example for PWM: `ctimer_pwm_example`. Answer the following questions:
+1. Import the example for PWM: `ctimer_pwm_example_cm33_core0`. Look into the `simple_pwm.c` file(this is the main of this example). Answer the following questions:
 
     1. How is the pin configuration set up?
     2. Modify the example to:
         1. Change the led blink frquency such that it is observable
         2. Have the led go in increments of 5% duty cycle. This transition should be observable(use a empty for loop with `0x2FFFFF` as the loop counter for the delay). Make sure the counter in the for loop does not get optimized out!
 
-2. Create a new project using the instructions from the manual(TBD, we only need to add ctimer to drivers). Add the following 2 lines to the main loop:
-
+2. Create a new project using the instructions from the manual. 
+    For all exercises using USART please add in the initialization phase:
+    ~~~~C
+    BOARD_InitDebugConsole();
+    ~~~~
+    Add the following 2 lines to the main loop:
     ~~~~C
     USART_ReadBlocking(USART0, &ch, 1);
     USART_WriteBlocking(USART0, &ch, 1);
@@ -41,4 +45,4 @@ output: pdf_document
     Odd or even from the point of view or position in the input(first character is even(position 0) second character is odd(position 1) etc.
     3. Add one more tag: b -> Remove all non printable characters from the input
 
-4. Combine the PWM and the USART exercises such that you enable PWM on the BLUE led and create a command to change the duty cycle using `CTIMER_UpdatePwmDutycycle`. The command will receive any number between 1 and 99. If the command is valid the application will send 'success' on UART after doing the setting, othewise it will send 'fail' and ignore the command.
+4. Combine the PWM and the USART exercises such that you enable PWM on the BLUE led and create a command to change the duty cycle using `CTIMER_UpdatePwmDutycycle`. The command will receive any number between 1 and 99. If the command is valid the application will send 'success' on UART after doing the setting, othewise it will send 'fail' and ignore the command. Start from the PWM example in exercise 1.
