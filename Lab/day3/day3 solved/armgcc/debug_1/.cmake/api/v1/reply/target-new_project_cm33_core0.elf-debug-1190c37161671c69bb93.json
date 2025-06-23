@@ -1,0 +1,1048 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "new_project_cm33_core0.elf"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"add_link_options",
+			"include",
+			"project",
+			"target_link_libraries",
+			"group_link_libraries",
+			"target_include_directories",
+			"include_if_use",
+			"target_sources",
+			"add_config_file"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt",
+			"C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/tools/cmake_toolchain_files/armgcc.cmake",
+			"C:/Program Files/CMake/share/cmake-3.25/Modules/CMakeDetermineSystem.cmake",
+			"C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/tools/cmake_toolchain_files/mcux_config.cmake",
+			"C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/CMSIS/Core/Include/CMSIS_Include_core_cm.cmake",
+			"C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/all_lib_device.cmake",
+			"C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/components/uart/component_usart_adapter.LPC55S69.cmake",
+			"C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/device_CMSIS.LPC55S69.cmake",
+			"C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/drivers/driver_clock.LPC55S69.cmake",
+			"C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/utilities/debug_console_lite/utility_assert_lite.LPC55S69.cmake",
+			"C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/utilities/utility_debug_console_lite.LPC55S69.cmake",
+			"C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/utilities/utility_str.LPC55S69.cmake",
+			"C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/device_startup.LPC55S69.cmake",
+			"C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/device_system.LPC55S69.cmake",
+			"C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/drivers/driver_common.LPC55S69.cmake",
+			"C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/drivers/driver_flexcomm.LPC55S69.cmake",
+			"C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/drivers/driver_flexcomm_i2c.LPC55S69.cmake",
+			"C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/drivers/driver_flexcomm_spi.LPC55S69.cmake",
+			"C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/drivers/driver_flexcomm_usart.LPC55S69.cmake",
+			"C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/drivers/driver_lpc_gpio.LPC55S69.cmake",
+			"C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/drivers/driver_power.LPC55S69.cmake",
+			"C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/drivers/driver_reset.LPC55S69.cmake",
+			"C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/utilities/utilities_misc_utilities.LPC55S69.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 46,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"file" : 2,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 124,
+				"parent" : 3
+			},
+			{
+				"file" : 1,
+				"parent" : 4
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 58,
+				"parent" : 5
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 92,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 153,
+				"parent" : 7
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 155,
+				"parent" : 7
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 157,
+				"parent" : 7
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 69,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 74,
+				"parent" : 0
+			},
+			{
+				"file" : 5,
+				"parent" : 12
+			},
+			{
+				"command" : 7,
+				"file" : 5,
+				"line" : 1719,
+				"parent" : 13
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 103,
+				"parent" : 14
+			},
+			{
+				"file" : 4,
+				"parent" : 15
+			},
+			{
+				"command" : 6,
+				"file" : 4,
+				"line" : 6,
+				"parent" : 16
+			},
+			{
+				"command" : 7,
+				"file" : 5,
+				"line" : 1780,
+				"parent" : 13
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 103,
+				"parent" : 18
+			},
+			{
+				"file" : 6,
+				"parent" : 19
+			},
+			{
+				"command" : 6,
+				"file" : 6,
+				"line" : 11,
+				"parent" : 20
+			},
+			{
+				"command" : 7,
+				"file" : 5,
+				"line" : 1785,
+				"parent" : 13
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 103,
+				"parent" : 22
+			},
+			{
+				"file" : 7,
+				"parent" : 23
+			},
+			{
+				"command" : 6,
+				"file" : 7,
+				"line" : 6,
+				"parent" : 24
+			},
+			{
+				"command" : 7,
+				"file" : 5,
+				"line" : 1803,
+				"parent" : 13
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 103,
+				"parent" : 26
+			},
+			{
+				"file" : 8,
+				"parent" : 27
+			},
+			{
+				"command" : 6,
+				"file" : 8,
+				"line" : 11,
+				"parent" : 28
+			},
+			{
+				"command" : 7,
+				"file" : 5,
+				"line" : 2198,
+				"parent" : 13
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 103,
+				"parent" : 30
+			},
+			{
+				"file" : 9,
+				"parent" : 31
+			},
+			{
+				"command" : 6,
+				"file" : 9,
+				"line" : 11,
+				"parent" : 32
+			},
+			{
+				"command" : 7,
+				"file" : 5,
+				"line" : 2200,
+				"parent" : 13
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 103,
+				"parent" : 34
+			},
+			{
+				"file" : 10,
+				"parent" : 35
+			},
+			{
+				"command" : 6,
+				"file" : 10,
+				"line" : 11,
+				"parent" : 36
+			},
+			{
+				"command" : 7,
+				"file" : 5,
+				"line" : 2205,
+				"parent" : 13
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 103,
+				"parent" : 38
+			},
+			{
+				"file" : 11,
+				"parent" : 39
+			},
+			{
+				"command" : 6,
+				"file" : 11,
+				"line" : 11,
+				"parent" : 40
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 6,
+				"parent" : 20
+			},
+			{
+				"command" : 7,
+				"file" : 5,
+				"line" : 1788,
+				"parent" : 13
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 103,
+				"parent" : 43
+			},
+			{
+				"file" : 12,
+				"parent" : 44
+			},
+			{
+				"command" : 9,
+				"file" : 12,
+				"line" : 21,
+				"parent" : 45
+			},
+			{
+				"command" : 8,
+				"file" : 3,
+				"line" : 128,
+				"parent" : 46
+			},
+			{
+				"command" : 7,
+				"file" : 5,
+				"line" : 1789,
+				"parent" : 13
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 103,
+				"parent" : 48
+			},
+			{
+				"file" : 13,
+				"parent" : 49
+			},
+			{
+				"command" : 8,
+				"file" : 13,
+				"line" : 7,
+				"parent" : 50
+			},
+			{
+				"command" : 8,
+				"file" : 8,
+				"line" : 6,
+				"parent" : 28
+			},
+			{
+				"command" : 7,
+				"file" : 5,
+				"line" : 1809,
+				"parent" : 13
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 103,
+				"parent" : 53
+			},
+			{
+				"file" : 14,
+				"parent" : 54
+			},
+			{
+				"command" : 8,
+				"file" : 14,
+				"line" : 6,
+				"parent" : 55
+			},
+			{
+				"command" : 8,
+				"file" : 14,
+				"line" : 11,
+				"parent" : 55
+			},
+			{
+				"command" : 7,
+				"file" : 5,
+				"line" : 1826,
+				"parent" : 13
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 103,
+				"parent" : 58
+			},
+			{
+				"file" : 15,
+				"parent" : 59
+			},
+			{
+				"command" : 8,
+				"file" : 15,
+				"line" : 6,
+				"parent" : 60
+			},
+			{
+				"command" : 7,
+				"file" : 5,
+				"line" : 1827,
+				"parent" : 13
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 103,
+				"parent" : 62
+			},
+			{
+				"file" : 16,
+				"parent" : 63
+			},
+			{
+				"command" : 8,
+				"file" : 16,
+				"line" : 6,
+				"parent" : 64
+			},
+			{
+				"command" : 7,
+				"file" : 5,
+				"line" : 1832,
+				"parent" : 13
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 103,
+				"parent" : 66
+			},
+			{
+				"file" : 17,
+				"parent" : 67
+			},
+			{
+				"command" : 8,
+				"file" : 17,
+				"line" : 6,
+				"parent" : 68
+			},
+			{
+				"command" : 7,
+				"file" : 5,
+				"line" : 1835,
+				"parent" : 13
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 103,
+				"parent" : 70
+			},
+			{
+				"file" : 18,
+				"parent" : 71
+			},
+			{
+				"command" : 8,
+				"file" : 18,
+				"line" : 6,
+				"parent" : 72
+			},
+			{
+				"command" : 7,
+				"file" : 5,
+				"line" : 1857,
+				"parent" : 13
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 103,
+				"parent" : 74
+			},
+			{
+				"file" : 19,
+				"parent" : 75
+			},
+			{
+				"command" : 8,
+				"file" : 19,
+				"line" : 6,
+				"parent" : 76
+			},
+			{
+				"command" : 7,
+				"file" : 5,
+				"line" : 1878,
+				"parent" : 13
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 103,
+				"parent" : 78
+			},
+			{
+				"file" : 20,
+				"parent" : 79
+			},
+			{
+				"command" : 8,
+				"file" : 20,
+				"line" : 6,
+				"parent" : 80
+			},
+			{
+				"command" : 7,
+				"file" : 5,
+				"line" : 1884,
+				"parent" : 13
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 103,
+				"parent" : 82
+			},
+			{
+				"file" : 21,
+				"parent" : 83
+			},
+			{
+				"command" : 8,
+				"file" : 21,
+				"line" : 6,
+				"parent" : 84
+			},
+			{
+				"command" : 7,
+				"file" : 5,
+				"line" : 2196,
+				"parent" : 13
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 103,
+				"parent" : 86
+			},
+			{
+				"file" : 22,
+				"parent" : 87
+			},
+			{
+				"command" : 8,
+				"file" : 22,
+				"line" : 7,
+				"parent" : 88
+			},
+			{
+				"command" : 8,
+				"file" : 22,
+				"line" : 14,
+				"parent" : 88
+			},
+			{
+				"command" : 8,
+				"file" : 9,
+				"line" : 6,
+				"parent" : 32
+			},
+			{
+				"command" : 8,
+				"file" : 10,
+				"line" : 6,
+				"parent" : 36
+			},
+			{
+				"command" : 8,
+				"file" : 11,
+				"line" : 6,
+				"parent" : 40
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "    -fstack-usage  -D__NEWLIB__  -fstack-usage  -D__NEWLIB__       -O0 -g -O0 -g     -include C:/Users/nxf97749/vsCodeRepo/day3/armgcc/../mcux_config.h     -DDEBUG     -DMCUX_META_BUILD     -DMCUXPRESSO_SDK     -DCPU_LPC55S69JBD100_cm33_core0     -g     -O0     --specs=nano.specs     -Wall     -fno-common     -ffunction-sections     -fdata-sections     -fno-builtin     -mthumb     -mapcs     -std=gnu99     -mcpu=cortex-m33     -mfloat-abi=hard -mfpu=fpv5-sp-d16     -DSDK_DEBUGCONSOLE=1 "
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 11,
+					"path" : "C:/Users/nxf97749/vsCodeRepo/day3/armgcc/.."
+				},
+				{
+					"backtrace" : 17,
+					"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/CMSIS/Core/Include/."
+				},
+				{
+					"backtrace" : 17,
+					"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/CMSIS/Core/Include/m-profile"
+				},
+				{
+					"backtrace" : 21,
+					"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/components/uart/."
+				},
+				{
+					"backtrace" : 25,
+					"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/."
+				},
+				{
+					"backtrace" : 25,
+					"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/periph"
+				},
+				{
+					"backtrace" : 29,
+					"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/drivers/."
+				},
+				{
+					"backtrace" : 33,
+					"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/utilities/debug_console_lite/."
+				},
+				{
+					"backtrace" : 37,
+					"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/utilities/debug_console_lite"
+				},
+				{
+					"backtrace" : 41,
+					"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/utilities/str"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				3,
+				6,
+				8,
+				9,
+				12,
+				14,
+				15,
+				16,
+				18,
+				20,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				36,
+				37,
+				38
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "    -fstack-usage  -D__NEWLIB__  -fstack-usage  -D__NEWLIB__       -g -g     -D__STARTUP_CLEAR_BSS     -DMCUXPRESSO_SDK     -DCPU_LPC55S69JBD100_cm33_core0     -g     -mthumb     -mcpu=cortex-m33     -mfloat-abi=hard -mfpu=fpv5-sp-d16 "
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 11,
+					"path" : "C:/Users/nxf97749/vsCodeRepo/day3/armgcc/.."
+				},
+				{
+					"backtrace" : 17,
+					"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/CMSIS/Core/Include/."
+				},
+				{
+					"backtrace" : 17,
+					"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/CMSIS/Core/Include/m-profile"
+				},
+				{
+					"backtrace" : 21,
+					"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/components/uart/."
+				},
+				{
+					"backtrace" : 25,
+					"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/."
+				},
+				{
+					"backtrace" : 25,
+					"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/periph"
+				},
+				{
+					"backtrace" : 29,
+					"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/drivers/."
+				},
+				{
+					"backtrace" : 33,
+					"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/utilities/debug_console_lite/."
+				},
+				{
+					"backtrace" : 37,
+					"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/utilities/debug_console_lite"
+				},
+				{
+					"backtrace" : 41,
+					"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/utilities/str"
+				}
+			],
+			"language" : "ASM",
+			"sourceIndexes" : 
+			[
+				21,
+				35
+			]
+		}
+	],
+	"id" : "new_project_cm33_core0.elf::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-fstack-usage  -D__NEWLIB__  -fstack-usage  -D__NEWLIB__       -O0 -g -O0 -g     -include C:/Users/nxf97749/vsCodeRepo/day3/armgcc/../mcux_config.h     -DDEBUG     -DMCUX_META_BUILD     -DMCUXPRESSO_SDK     -DCPU_LPC55S69JBD100_cm33_core0     -g     -O0     --specs=nano.specs     -Wall     -fno-common     -ffunction-sections     -fdata-sections     -fno-builtin     -mthumb     -mapcs     -std=gnu99     -mcpu=cortex-m33     -mfloat-abi=hard -mfpu=fpv5-sp-d16     -DSDK_DEBUGCONSOLE=1",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-g     -Xlinker     -Map=output.map     -Wall     -fno-common     -ffunction-sections     -fdata-sections     -fno-builtin     -mthumb     -mapcs     -Wl,--gc-sections     -Wl,-static     -Wl,--print-memory-usage     -mcpu=cortex-m33     -mfloat-abi=hard -mfpu=fpv5-sp-d16     --specs=nosys.specs     -T\"C:/Users/nxf97749/vsCodeRepo/day3/armgcc/LPC55S69_cm33_core0_flash.ld\" -static",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-Wl,--no-warn-rwx-segments",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "-Wl,--start-group",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "-lgcc -lc -lm -lcr_newlib_nohost",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "-Wl,--end-group",
+				"role" : "libraries"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "new_project_cm33_core0.elf",
+	"nameOnDisk" : "new_project_cm33_core0.elf",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				3,
+				6,
+				8,
+				9,
+				12,
+				14,
+				15,
+				16,
+				18,
+				20,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				36,
+				37,
+				38
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				2,
+				4,
+				5,
+				7,
+				10,
+				11,
+				13,
+				17,
+				19
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				21,
+				35
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/day3/main.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/day3/peripherals.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/day3/peripherals.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/day3/pin_mux.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/day3/pin_mux.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/day3/board.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/day3/board.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/day3/clock_config.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/day3/clock_config.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/day3/hardware_init.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/day3/app.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/day3/mcux_config.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/day3/tests/test_memcopy.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/day3/tests/test_functions.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/day3/tests/test_check_prime.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/day3/src/memcopy_functions.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/day3/src/check_prime.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/day3/src/functions_under_test.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/day3/test_utils.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/day3/test_utils.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 42,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/components/uart/fsl_adapter_usart.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 47,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/gcc/startup_LPC55S69_cm33_core0.S",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 51,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/system_LPC55S69_cm33_core0.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 52,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/drivers/fsl_clock.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 56,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/drivers/fsl_common.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 57,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/drivers/fsl_common_arm.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 61,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/drivers/fsl_flexcomm.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 65,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/drivers/fsl_i2c.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 69,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/drivers/fsl_spi.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 73,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/drivers/fsl_usart.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 77,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/drivers/fsl_gpio.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 81,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/drivers/fsl_power.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 85,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/drivers/fsl_reset.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 89,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/utilities/fsl_syscall_stub.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 89,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/utilities/fsl_sbrk.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 90,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/utilities/fsl_memcpy.S",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 91,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/utilities/debug_console_lite/fsl_assert.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 92,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/utilities/debug_console_lite/fsl_debug_console.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 93,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/nxf97749/vsCodeRepo/sdks/lpcxpresso55s69_blank_sdk/devices/LPC55S69/utilities/str/fsl_str.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}
