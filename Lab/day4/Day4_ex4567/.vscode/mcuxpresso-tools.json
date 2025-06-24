@@ -6,8 +6,8 @@
   "multicoreType": "none",
   "projectType": "sdk-freestanding",
   "sdk": {
-    "path": "f:\\work\\New folder\\SDK\\SDK_25_03_00_LPCXpresso55S69",
     "version": "25.03.00",
+    "path": "f:\\work\\summerschool\\Lab\\day4\\sdks\\Day4_ex4567_sdk",
     "boardId": "lpcxpresso55s69",
     "deviceId": "LPC55S69",
     "coreId": "cm33_core0_LPC55S69"
