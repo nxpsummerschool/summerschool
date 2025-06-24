@@ -15,7 +15,7 @@ Send `test` over UART. Using the dissasembly view, the registers and breakpoints
 
 Note: To open the dissasembly view right click on any entry in CALL STACK. In order to step through assembly instructions you will need to activate the Instruction Stepping Mode found on the debug pannel after stop.
 ![Debug](pics/dissasemblyview.png "Debug"){ width=500px }
--=
+
 2. Implement a non time constant memory compare. For example, as an input we receive a input via UART of 3 bytes, where each element can have values between 0 and 2. Non time constant means that we check each byte and and the first mismatch we return "FAIL" on UART, if all bytes pass we return "PASS". Add a "secret key" to compare against on the micracontroller.
 
     1. add a delay(1-2 seconds) such that we can distinguish when the function fails after 1 byte or 2 or 3. This is the non time constant part.
