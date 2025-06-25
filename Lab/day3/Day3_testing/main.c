@@ -67,7 +67,7 @@ int main(void) {
     /* len of the buffer to be read from the host side */
     uint8_t len;
     /* allocated buffer to be read from the host side */
-    uint8_t buf[2048];
+    uint8_t buf[256];
     /* error string to be used for printing an error message */
     uint8_t error_string[256] = {"\0"};
 
