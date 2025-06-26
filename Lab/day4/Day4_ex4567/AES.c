@@ -524,7 +524,7 @@ void AES_CTR_xcrypt_buffer(struct AES_ctx* ctx, uint8_t* buf, size_t length)
       }
       bi = 0;
     }
-
+    // TODO: fix this, needs to be a for per block!!!!!!!
     buf[i] = (buf[i] ^ buffer[bi]);
   }
 }

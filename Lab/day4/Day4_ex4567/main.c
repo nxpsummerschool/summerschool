@@ -39,7 +39,7 @@ uint8_t plain[64] =  {0x6b, 0xc1, 0xbe, 0xe2, 0x2e, 0x40, 0x9f, 0x96,
 		 0xf6, 0x9f, 0x24, 0x45, 0xdf, 0x4f, 0x9b, 0x17,
 		 0xad, 0x2b, 0x41, 0x7b, 0xe6, 0x6c, 0x37, 0x10};
 uint8_t IV[16] = {0x00U, 0x01U, 0x02U, 0x03U, 0x04U, 0x05U, 0x06U, 0x07U, 0x08U, 0x09U, 0x0aU, 0x0bU, 0x0cU, 0x0dU, 0x0eU, 0x0fU};
-uint8_t cipher[16];
+uint8_t cipher[64];
 uint8_t encripted[64];
 
 uint8_t dict[16]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
@@ -71,7 +71,7 @@ void AES256ECB(){
 	{
 		USART_ReadBlocking(USART0, &ch, 1);
 	}
-	PRINTF("please enter number of data bloks");
+	PRINTF("please enter number of data blocks");
 	USART_ReadBlocking(USART0, &len, 1);
 	ReadData(len);
 	if('e' == ch)
@@ -102,7 +102,7 @@ void AES256CBC(){
 	{
 		USART_ReadBlocking(USART0, &ch, 1);
 	}
-	PRINTF("please enter number of data bloks");
+	PRINTF("please enter number of data blocks");
 	USART_ReadBlocking(USART0, &len, 1);
 	ReadData(len);
 	if('e' == ch)
@@ -127,8 +127,8 @@ void AES256CBC(){
 void AES256CBCMAC(){
 	uint8_t len=0;
 	memset(IV,0x00,16);
-	AES_init_ctx_iv(&aes, key,IV);
-	PRINTF("please enter number of data bloks");
+	AES_init_ctx_iv(&aes, key, IV);
+	PRINTF("please enter number of data blocks");
 	USART_ReadBlocking(USART0, &len, 1);
 	ReadData(len);
 
@@ -136,7 +136,7 @@ void AES256CBCMAC(){
 
 	for( int i=(len-1)*AES_BLOCKLEN;i<len*AES_BLOCKLEN;i++)
 	{
-		USART_WriteBlocking(USART0, &dict[plain[i]>>4],1);
+		USART_WriteBlocking(USART0, &dict[plain[i]>>4],1);// first nibble? --> 0...F [nb1 nb0] 0x60
 		USART_WriteBlocking(USART0, &dict[plain[i]&0x0F],1);
 	}
 }
@@ -157,7 +157,11 @@ void AES256CTR()
 	USART_ReadBlocking(USART0, &len, 1);
 	ReadData(len);
 
-	AES_CTR_xcrypt_buffer(&aes, plain,len);
+    // plain == input
+    // cipher == output
+// #define input plain
+// #define output cipher
+    AES_CTR_xcrypt_buffer(&aes, plain, len);
 
 	for( int i=0;i<len*AES_BLOCKLEN;i++)
 	{
@@ -167,6 +171,81 @@ void AES256CTR()
 
 }
 
+void AES256CCM()
+{
+	// uint8_t ch=0;
+	// uint8_t len=0;
+	// memset(IV,0x00,AES_BLOCKLEN);
+
+    // uint8_t firstCTR[AES_BLOCKLEN] = {0};
+    
+    // AES_ECB_encrypt(&aes, firstCTR);
+    // IV[AES_BLOCKLEN - 1] = 1;
+    
+	// PRINTF("please enter 'e' for encrypt or 'd' for decrypt");
+	// while('e'!=ch && 'd'!=ch)
+	// {
+	// 	USART_ReadBlocking(USART0, &ch, 1);
+	// }
+	// PRINTF("please enter number of data blocks");
+
+	// USART_ReadBlocking(USART0, &len, 1);
+	// ReadData(len);
+
+	// AES_init_ctx_iv(&aes, key, IV);
+
+	// if('e' == ch)
+    // {
+    //     // CTR encryption
+    //     AES_CTR_xcrypt_buffer(&aes, plain, cipher, len);
+
+    //     // Compute MAC
+    //     AES_CBC_encrypt(&aes, plain, len); // tag will be in plain
+
+    //     uint8_t mac[AES_BLOCKLEN] = {0};
+    //     memcpy(mac, plain + (len-1)*AES_BLOCKLEN, AES_BLOCKLEN);
+
+    //     uint8_t tag[AES_BLOCKLEN] = {0};
+    //     for(int i=0; i< AES_BLOCKLEN; i++)
+    //     {
+    //         tag[i] = plain[i] ^ firstCTR[i];
+    //     }
+        
+	// 	USART_WriteBlocking(USART0, tag, AES_BLOCKLEN);
+
+    // }
+    // else
+    // {
+	//     PRINTF("please enter tag for authenticity check");
+    //     uint8_t input_tag[AES_BLOCKLEN] = {0x7A, 0x65, 0x1E, 0xC5, 0xB1, 0xD8, 0x8A, 0xD5, 0x88, 0x2A, 0x1C, 0x60, 0x1F, 0x1A, 0x0D, 0x6B};
+	//     // USART_ReadBlocking(USART0, &input_tag, AES_BLOCKLEN);
+
+    //     // CTR encryption
+    //     AES_CTR_xcrypt_buffer(&aes, plain, cipher, len);
+
+    //     // Compute MAC
+    //     AES_CBC_encrypt(&aes, plain, len); // tag will be in plain
+
+    //     uint8_t mac[AES_BLOCKLEN] = {0};
+    //     memcpy(mac, plain + (len-1)*AES_BLOCKLEN, AES_BLOCKLEN);
+
+    //     for(int i=0; i< AES_BLOCKLEN; i++)
+    //     {
+    //         if (input_tag[i] != (plain[i] ^ firstCTR[i]))
+    //         {
+	//             PRINTF("invalid tag!");
+    //         }
+    //     }
+
+    // }
+
+    
+    // CTR decryption
+	// AES_CTR_xcrypt_buffer(&aes, cipher, plain, len);
+
+}
+//tag
+//0x7A, 0x65, 0x1E, 0xC5, 0xB1, 0xD8, 0x8A, 0xD5, 0x88, 0x2A, 0x1C, 0x60, 0x1F, 0x1A, 0x0D, 0x6B, 
 /*******************************************************************************
  * Prototypes
  ******************************************************************************/
@@ -197,10 +276,11 @@ int main(void)
         USART_ReadBlocking(USART0, &mode, 1);
         switch(mode)
         {
-        case 1: AES256ECB();break;
-        case 2: AES256CBC();break;
-        case 4: AES256CTR();break;
-        case 3: AES256CBCMAC();break;
+            case 1: AES256ECB();break;
+            case 2: AES256CBC();break;
+            case 4: AES256CTR();break;
+            case 3: AES256CBCMAC();break;
+            case 5: AES256CCM();break;
         }
     }
 
